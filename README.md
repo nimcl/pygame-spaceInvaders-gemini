@@ -1,8 +1,15 @@
 # pygame-spaceInvaders-gemini
 Réplica de space invaders com feedback gerado por IA
-
-
-
+Para este projeto montei o esqueleto da réplica de space invaders utilizando a biblioteca “pygame”. 
+Durante a partida são coletados dados como: tempo e quantidade de inimigos acertados até a pontuação 
+zerar (a pontuação inicial é 3 e vai aumentando à medida que eu acerto um oponente e diminui quando o 
+oponente me acerta). 
+Os dados de cada partida são convertidos em arquivos .txt e adicionados a uma pasta dentro do meu 
+diretório vscode, para isso utilizei a biblioteca “os” e “uuid”. 
+Tendo os meus dados armazenados, utilizo a API do Gemini para fazer a leitura desses dados e gerar um 
+feedback geral, me dizendo se o jogador aumentou ou diminuiu o seu desempenho ao longo de cada 
+partida e gerando estratégias para o jogo (apesar do jogo ser extremamente limitado é uma função de 
+grande valia para jogos RPG). 
 
 	import pygame
 	import random
